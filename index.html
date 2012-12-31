@@ -1,0 +1,81 @@
+<html>
+  <head> 
+    <title>Vigilant Medical</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/changeIt.js">  </script>
+    <script src="./js/responsiveslides.js"></script>
+
+    <link href="./css/bootstrap.css" rel="stylesheet">
+     
+    <script>
+      $(function () {
+        $("#slider").responsiveSlides({
+          auto: true,
+          pager: true,
+          speed: 1200,
+          maxwidth: 540
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="navbarContainer">
+          <a class="brand" href="/">Vigilant Medical</a>            
+          <ul class="nav pull-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>            
+        </div>
+      </div>
+    </div>
+    <div class="outer">
+      <div class="test">
+        <div class="container">
+          <center><h1>Vigilant Medical & Imageshare</h1></center>
+          <div class="hero-unit">
+            <ul class="rslides" id="slider">
+              <li><a href="http://google.com"><img src="./slides/JPEG/1.jpg" alt=""></a></li>
+              <li><a href="#"><img src="./slides/JPEG/2.jpg" alt=""></a></li>
+              <li><a href="#"><img src="./slides/JPEG/3.jpg" alt=""></a></li>
+              <li><a href="#"><img src="./slides/JPEG/4.jpg" alt=""></a></li>
+              <li><a href="#"><img src="./slides/JPEG/5.jpg" alt=""></a></li>
+            </ul>   
+            <br><br><br><br><br><br><br><br>
+          </div>
+    
+          <br>
+          <center>     
+            <button class="btn btn-large btn-primary centered" type="button">Sign Up For An Account</button>
+          </center>
+          <br>
+    
+          <div class="row">
+            <div class="span4">
+              <h3>Enhance Referrals</h3>
+              <iframe src="http://player.vimeo.com/video/30103954?title=0&amp;byline=0&amp;portrait=0" width="300" height="230" frameborder=  "0  " webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </div>
+            <div class="span4">
+              <h3>Facilitate Collaboration</h3>
+              <iframe src="http://player.vimeo.com/video/30104005?title=0&amp;byline=0&amp;portrait=0" width="300" height="230" frameborder=  "0  " webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
+            </div>
+            <div class="span4">
+              <h3>Save Time</h3>
+              <iframe src="http://player.vimeo.com/video/30104029?title=0&amp;byline=0&amp;portrait=0" width="300" height="230" frameborder=  "0  " webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <footer class="pull-right">
+      <p>&copy; Vigilant Medical 2012</p>
+    </footer>
+  </body>
+</html>
