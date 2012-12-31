@@ -175,16 +175,12 @@
         // Pager
         if (settings.pager) {
           var tabMarkup = [];
-          var slides = ["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What is ImageShare?", 
-          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Who is ImageShare For?", 
-          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How Does it Work?", 
-          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Who Pays for ImageShare?", 
-          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;More Information"];
+          var slides = ["What is ImageShare?", "Who is ImageShare For?", "How Does it Work?", "Who Pays for ImageShare?", "More Information"];
           $slide.each(function (i) {
             var n = i + 1;
             tabMarkup +=
               "<li>" +
-              "<a href='#' class='" + slideClassPrefix + n + "'>" + slides[n-1] + "</a>" +
+              "<a href='#' class='" + slideClassPrefix + n + "'>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + slides[n-1] + "</a>" +
               "</li>";
           });
           $pager.append(tabMarkup);
